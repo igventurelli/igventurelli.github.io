@@ -15,7 +15,7 @@ export default {
    */
   head: {
     titleTemplate: '%s',
-    title: 'John Avocado | Professional Avocado',
+    title: 'Igor Venturelli | Software Engineer',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -26,7 +26,7 @@ export default {
       },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/links-page/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ],
   },
   /*
@@ -67,8 +67,4 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
-
-  router: {
-    base: '/links-page/',
-  },
 }
