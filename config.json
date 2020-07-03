@@ -1,0 +1,55 @@
+{
+  "avatar": "img/me.png",
+  "name": "John Avocado",
+  "bio": "Professional Avocado & Photographer",
+  "links": [
+    {
+      "image": "img/linkedin.png",
+      "url": "https://www.linkedin.com/",
+      "text": "in/johnavocado",
+      "title": "LinkedIn"
+    },
+    {
+      "image": "img/so.png",
+      "url": "https://stackoverflow.com/",
+      "text": "@johnavocado",
+      "title": "StackOverflow"
+    },
+    {
+      "image": "img/youtube.png",
+      "url": "https://www.youtube.com/",
+      "text": "@johnavocado",
+      "title": "YouTube"
+    },
+    {
+      "image": "img/discord.png",
+      "url": "https://discord.gg/",
+      "text": "johnavocado [community]",
+      "title": "Discord"
+    },
+    {
+      "image": "img/medium.png",
+      "url": "https://medium.com/",
+      "text": "@johnavocado",
+      "title": "Medium"
+    },
+    {
+      "image": "img/twitter.png",
+      "url": "https://twitter.com/",
+      "text": "@johnavocado",
+      "title": "Twitter"
+    },
+    {
+      "image": "img/instagram.png",
+      "url": "https://instagram.com/",
+      "text": "@johnavocado",
+      "title": "Instagram"
+    },
+    {
+      "image": "img/telegram.png",
+      "url": "t.me/",
+      "text": "@johnavocado",
+      "title": "Telegram"
+    }
+  ]
+}
