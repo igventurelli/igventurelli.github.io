@@ -3,7 +3,8 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
-import HeroImage from '@/public/images/me.jpg'
+import HeroImage from '@/public/images/me.png'
+import ThemeToggle from './theme-toggle'
 
 export default function SideNavigation() {
 
@@ -20,6 +21,9 @@ export default function SideNavigation() {
               </Link>
             </div>
           )}
+          <div className="flex justify-center my-4">
+            <ThemeToggle />
+          </div>
         </div>
         <div className="flex-1 grow flex items-center">
           <nav className="w-full">

@@ -10,8 +10,8 @@ import Testimonial01 from '@/public/images/testimonial-01.jpg'
 import Testimonial02 from '@/public/images/testimonial-02.jpg'
 
 export const metadata = {
-  title: 'About - DevSpace',
-  description: 'Page description',
+  title: 'Subscribe - Igor Venturelli',
+  description: 'Stay updated with the latest insights and updates from Igor Venturelli. Subscribe to my newsletter for exclusive content, tech trends, project updates, and more. Join a community of like-minded enthusiasts and never miss a post.',
 }
 
 export default function Subscribe() {
@@ -178,8 +178,8 @@ export default function Subscribe() {
       <aside className="md:w-[240px] lg:w-[300px] shrink-0">
         <div className="space-y-6">
 
-          <WidgetSponsor />
-          <WidgetBook />
+          {/* <WidgetSponsor /> */}
+          {/* <WidgetBook /> */}
 
         </div>
       </aside>

@@ -8,8 +8,8 @@ import WidgetBook from '@/components/widget-book'
 import PostsList from '@/components/posts-list'
 
 export const metadata = {
-  title: 'Home - DevSpace',
-  description: 'Page description',
+  title: 'Igor Venturelli | Software Engineer',
+  description: 'Welcome to the personal website of Igor Venturelli, a skilled software engineer. Discover my professional journey, including work experience, education, side hustles, and testimonials. Dive into my personal blog to explore insights on technology and more. Let\'s connect and collaborate on innovative projects.',
 }
 
 export default async function Home() {
@@ -43,8 +43,8 @@ export default async function Home() {
           <div className="space-y-6">
 
             <WidgetNewsletter />
-            <WidgetSponsor />
-            <WidgetBook />
+            {/* <WidgetSponsor />
+            <WidgetBook /> */}
 
           </div>
         </aside>

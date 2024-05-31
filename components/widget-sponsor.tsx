@@ -1,6 +1,6 @@
 export default function WidgetSponsor() {
   return (
-    <div className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 odd:rotate-1 even:-rotate-1 p-5">
+    <div className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 p-5">
       <div className="flex items-center space-x-3 mb-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="20">
           <path

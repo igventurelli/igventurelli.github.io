@@ -5,6 +5,7 @@ import localFont from 'next/font/local'
 import Theme from './theme-provider'
 import SideNavigation from '@/components/ui/side-navigation'
 import Header from '@/components/ui/header'
+import Footer from '@/components/ui/footer'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -50,9 +51,11 @@ export default function RootLayout({
               <main className="grow overflow-hidden px-6">
                 <div className="w-full h-full max-w-[1072px] mx-auto flex flex-col">
 
-                  <Header />
+                  {/* <Header /> */}
 
                   {children}
+
+                  <Footer />
 
                 </div>
               </main>

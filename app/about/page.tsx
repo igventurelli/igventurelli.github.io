@@ -5,8 +5,8 @@ import AboutImg from '@/public/images/about.png'
 import Experience from '@/components/experience'
 
 export const metadata = {
-  title: 'About - DevSpace',
-  description: 'Page description',
+  title: 'About - Igor Venturelli',
+  description: 'Learn more about Igor Venturelli, a passionate software engineer with a strong background in technology and innovation. Discover my professional journey, personal interests, and the values that drive my work. Get to know the person behind the code.',
 }
 
 export default function About() {
@@ -64,7 +64,7 @@ export default function About() {
         <div className="space-y-6">
 
           <WidgetNewsletter />
-          <WidgetSponsor />
+          {/* <WidgetSponsor /> */}
 
         </div>
       </aside>

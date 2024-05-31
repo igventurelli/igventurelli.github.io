@@ -12,8 +12,8 @@ import Icon07 from '@/public/images/project-icon-07.svg'
 import Icon08 from '@/public/images/project-icon-08.svg'
 
 export const metadata = {
-  title: 'Projects - DevSpace',
-  description: 'Page description',
+  title: 'Projects - Igor Venturelli',
+  description: 'Explore the diverse projects of Igor Venturelli, showcasing a wide range of skills and expertise in software development. From innovative apps to collaborative ventures, see how I bring ideas to life through technology.',
 }
 
 export default function Projects() {
@@ -135,7 +135,7 @@ export default function Projects() {
         <div className="space-y-6">
 
           <WidgetNewsletter />
-          <WidgetSponsor />
+          {/* <WidgetSponsor /> */}
 
         </div>
       </aside>

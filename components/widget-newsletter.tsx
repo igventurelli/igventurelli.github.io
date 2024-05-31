@@ -7,7 +7,7 @@ import Avatar05 from '@/public/images/avatar-05.jpg'
 
 export default function WidgetNewsletter() {
   return (
-    <div className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 odd:rotate-1 even:-rotate-1 p-5">
+    <div className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 p-5">
       <div className="text-center mb-1">
         <div className="inline-flex -space-x-3 -ml-0.5">
           <Image

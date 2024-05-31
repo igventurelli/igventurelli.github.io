@@ -41,7 +41,7 @@ export default function PostItem({ title, image, publishedAt, url, content, cate
           </div>
           <div className="mt-2">
             {categories.map((category, index) => (
-              <div key={index} className="text-xs inline-flex items-center font-medium bg-sky-100 text-sky-600 rounded-full text-center px-3 h-5 mr-1">
+              <div key={index} className="text-xs inline-flex items-center font-medium bg-sky-100 text-sky-600 dark:bg-sky-700 dark:text-sky-300 rounded-full text-center px-3 h-5 mr-1">
                 <Link href="https://medium.com/@igventurelli" target="_blank">{category}</Link></div>
             ))}
           </div>
