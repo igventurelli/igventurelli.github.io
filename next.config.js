@@ -4,7 +4,6 @@ const { withContentlayer } = require('next-contentlayer')
 // const nextConfig = {}
 const nextConfig = {
     basePath: '/igventurelli',
-    assetPrefix: '/igventurelli/',
     output: 'export',
     reactStrictMode: true,
 };
