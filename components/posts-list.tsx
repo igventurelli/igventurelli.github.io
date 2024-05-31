@@ -34,7 +34,7 @@ export default function PostsList() {
             image={imageUrl}
             publishedAt={item.pubDate}
             url={item.link}
-            content={content}
+            content={content.replace(/<[^>]*>/, '').replace(/<\/[^>]*>/, '').substring(0, 200).trim() + '...'}
             categories={item.categories}
         />)
    })}</p>)
