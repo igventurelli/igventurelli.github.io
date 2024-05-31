@@ -1,4 +1,3 @@
-import { allPosts } from 'contentlayer/generated'
 import Hero from '@/components/hero'
 import PostItem from './post-item'
 import Talks from '@/components/talks'
@@ -14,11 +13,6 @@ export const metadata = {
 }
 
 export default async function Home() {
-
-  // Sort posts by date
-  allPosts.sort((a, b) => {
-    return (new Date(a.publishedAt) > new Date(b.publishedAt)) ? -1 : 1
-  }) 
 
   return (
     <>
