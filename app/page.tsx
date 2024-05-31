@@ -6,6 +6,7 @@ import FeaturedProjects from '@/components/featured-projects'
 import WidgetNewsletter from '@/components/widget-newsletter'
 import WidgetSponsor from '@/components/widget-sponsor'
 import WidgetBook from '@/components/widget-book'
+import PostsList from '@/components/posts-list'
 
 export const metadata = {
   title: 'Home - DevSpace',
@@ -32,6 +33,7 @@ export default async function Home() {
 
               <section>
                 <h2 className="font-aspekta text-xl font-[650] mb-3">Latest Articles</h2>
+                <PostsList />
 
                 {/* Filters */}
                 <ul className="flex flex-wrap text-sm border-b border-slate-100 dark:border-slate-800">
@@ -58,11 +60,11 @@ export default async function Home() {
                 </ul>
 
                 {/* Articles list */}
-                <div>
+                {/* <div>
                   {allPosts.map((post, postIndex) => (
                       <PostItem key={postIndex} {...post} />
                   ))}
-                </div>
+                </div> */}
               </section>
 
               <Talks />
