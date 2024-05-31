@@ -3,8 +3,38 @@
 import PostItem from '@/app/post-item';
 import { useEffect, useState } from 'react'
 
+export class PostType {
+    title: string
+    pubDate: string
+    link: string
+    description: string
+    categories: []
+  
+    constructor(title: string, pubDate: string, link: string, description: string, categories: []) {
+      this.title = title
+      this.pubDate = pubDate
+      this.link = link
+      this.description = description
+      this.categories = categories
+    }
+  }
+
 export default function PostsList() {
-    const [items, setItems] = useState([])
+    const [items, setItems] = useState<PostType[]>([])
+
+    const getContent = (description: string) => description
+            .substring(description.indexOf('<p>') + 3, description.indexOf('</p>'))
+            .replace(/<[^>]*>/, '').
+            replace(/<\/[^>]*>/, '')
+            .substring(0, 200)
+            .trim() 
+            + '...'
+
+    const getImageUrl = (description: string) => description
+        .substring(
+            description.indexOf('<img alt=\"\" src=\"') + 17, 
+            description.indexOf('\"><figcaption>')
+        )
 
     useEffect(() => {
         async function fetchData() {
@@ -20,22 +50,13 @@ export default function PostsList() {
         fetchData();
     }, []);
 
-    return (<p>{items.slice(0, 4).map((item, index) => {
-        const start = item.description.indexOf('<p>')
-        const end = item.description.indexOf('</p>')
-        const content = item.description.substring(start + 3, end)
-
-        const imageStart = item.description.indexOf('<img alt=\"\" src=\"')
-        const imageEnd = item.description.indexOf('\"><figcaption>')
-        const imageUrl = item.description.substring(imageStart + 17, imageEnd)
-
-        return (<PostItem key={index} 
-            title={item.title}
-            image={imageUrl}
-            publishedAt={item.pubDate}
-            url={item.link}
-            content={content.replace(/<[^>]*>/, '').replace(/<\/[^>]*>/, '').substring(0, 200).trim() + '...'}
-            categories={item.categories}
-        />)
-   })}</p>)
+    return (<div>{items.slice(0, 4).map((item, index) => <PostItem 
+        key={index} 
+        title={item.title}
+        image={getImageUrl(item.description)}
+        publishedAt={item.pubDate}
+        url={item.link}
+        content={getContent(item.description)}
+        categories={item.categories}
+    />)}</div>)
 }

@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import PostDate from '@/components/post-date'
 
-
 export default function PostItem({ title, image, publishedAt, url, content, categories }: { 
   title: string,
   image: string,
@@ -22,14 +21,14 @@ export default function PostItem({ title, image, publishedAt, url, content, cate
           <h3 className="font-aspekta text-lg font-[650] mb-1">
             <Link
               className="inline-flex relative hover:text-sky-500 duration-150 ease-out before:scale-x-0 before:origin-center before:absolute before:inset-0 before:bg-sky-200 dark:before:bg-sky-500 before:opacity-30 before:-z-10 before:translate-y-1/4 before:-rotate-2 hover:before:scale-100 before:duration-150 before:ease-in-out"
-              href={url}
+              href={url} target="_blank"
             >
               {title}
             </Link>
           </h3>
           <div className="flex">
             <div className="grow text-sm text-slate-500 dark:text-slate-400">{content}</div>
-            <Link className="hidden lg:flex shrink-0 text-sky-500 items-center justify-center w-12 group" href={url} tabIndex={-1}>
+            <Link className="hidden lg:flex shrink-0 text-sky-500 items-center justify-center w-12 group" target="_blank" href={url} tabIndex={-1}>
               <svg
                 className="fill-current group-hover:translate-x-2 duration-150 ease-in-out"
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,8 +41,8 @@ export default function PostItem({ title, image, publishedAt, url, content, cate
           </div>
           <div className="mt-2">
             {categories.map((category, index) => (
-              <div className="text-xs inline-flex items-center font-medium bg-sky-100 text-sky-600 rounded-full text-center px-3 h-5 mr-1">{category}</div>
-            
+              <div key={index} className="text-xs inline-flex items-center font-medium bg-sky-100 text-sky-600 rounded-full text-center px-3 h-5 mr-1">
+                <Link href="https://medium.com/@igventurelli" target="_blank">{category}</Link></div>
             ))}
           </div>
         </div>
