@@ -31,7 +31,7 @@ export default async function Home() {
                 {/* Articles list */}
               </section>
 
-              <Talks />
+              {/* <Talks /> */}
               <FeaturedProjects />
 
             </div>
