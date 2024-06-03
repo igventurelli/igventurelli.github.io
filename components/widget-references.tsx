@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-import Reference01 from '@/public/images/reference-01.jpg'
-import Reference02 from '@/public/images/reference-02.jpg'
+import Bruno from '@/public/images/referencias/bruno.png'
+import Danilo from '@/public/images/referencias/danilo.png'
 
 export default function WidgetReferences() {
   return (
@@ -9,12 +9,12 @@ export default function WidgetReferences() {
       <div className="font-aspekta font-[650] mb-3">References</div>
       <ul className="space-y-3">
         <li>
-          <a className="flex justify-between items-center space-x-2 group" href="#0">
+          <a className="flex justify-between items-center space-x-2 group" href="https://www.linkedin.com/in/bruno-vieira-vitoria-956326/" target="_blank">
             <div className="grow flex items-center space-x-3 truncate">
-              <Image className="rounded-full" src={Reference01} width={32} height={32} alt="Mr. Mark Smularkov" />
+              <Image className="rounded-full" src={Bruno} width={32} height={32} alt="Bruno Vitoria" />
                 <div className="truncate">
-                  <div className="font-aspekta font-[650] text-sm truncate mb-1">Mr. Mark Smularkov</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400">CEO, Acme Tech.</div>
+                  <div className="font-aspekta font-[650] text-sm truncate mb-1">Bruno Vitoria</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400">Founder, Exactaworks</div>
                 </div>
             </div>
             <div className="shrink-0 text-sky-500">
@@ -25,12 +25,12 @@ export default function WidgetReferences() {
           </a>
         </li>
         <li>
-          <a className="flex justify-between items-center space-x-2 group" href="#0">
+          <a className="flex justify-between items-center space-x-2 group" href="https://www.linkedin.com/in/danilomilano/" target="_blank">
             <div className="grow flex items-center space-x-3 truncate">
-              <Image className="rounded-full" src={Reference02} width={32} height={32} alt="Jame Kulls" />
+              <Image className="rounded-full" src={Danilo} width={32} height={32} alt="Danilo Damilano" />
                 <div className="truncate">
-                  <div className="font-aspekta font-[650] text-sm truncate mb-1">Jame Kulls</div>
-                  <div className="text-xs text-slate-500 dark:text-slate-400">CEO, Money Maker</div>
+                  <div className="font-aspekta font-[650] text-sm truncate mb-1">Danilo Damilano</div>
+                  <div className="text-xs text-slate-500 dark:text-slate-400">CIO, CleanCloud by SEK</div>
                 </div>
             </div>
             <div className="shrink-0 text-sky-500">
