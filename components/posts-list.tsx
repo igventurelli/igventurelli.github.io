@@ -20,6 +20,7 @@ export class PostType {
   }
 
 export default function PostsList() {
+    const [loading, setLoading] = useState(true)
     const [items, setItems] = useState<PostType[]>([])
 
     const getContent = (description: string) => description
@@ -39,10 +40,11 @@ export default function PostsList() {
     useEffect(() => {
         async function fetchData() {
             try {
+                setLoading(true)
                 const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@igventurelli')
                 const data = await res.json()
-                const items = data.items
-                setItems(items)
+                setItems(data.items)
+                setLoading(false)
             } catch (err) {
                 console.log(err)
             }
@@ -50,13 +52,45 @@ export default function PostsList() {
         fetchData();
     }, []);
 
-    return (<div>{items.slice(0, 4).map((item, index) => <PostItem 
-        key={index} 
-        title={item.title}
-        image={getImageUrl(item.description)}
-        publishedAt={item.pubDate}
-        url={item.link}
-        content={getContent(item.description)}
-        categories={item.categories}
-    />)}</div>)
+    if (loading) {
+        return (
+            <div role="status" className="max-w-sm animate-pulse">
+                <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[300px] mb-2.5"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
+                <br />
+                <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[300px] mb-2.5"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
+                <br />
+                <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px] mb-2.5"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[330px] mb-2.5"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[300px] mb-2.5"></div>
+                <div className="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
+                <span className="sr-only">Loading...</span>
+            </div>
+        )
+    }
+
+    return (
+        <div>
+            {items.slice(0, 4).map((item, index) => <PostItem 
+                key={index} 
+                title={item.title}
+                image={getImageUrl(item.description)}
+                publishedAt={item.pubDate}
+                url={item.link}
+                content={getContent(item.description)}
+                categories={item.categories}
+            />)}
+        </div>
+    )
 }
