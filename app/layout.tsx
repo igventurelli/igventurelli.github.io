@@ -6,6 +6,7 @@ import Theme from './theme-provider'
 import SideNavigation from '@/components/ui/side-navigation'
 import Header from '@/components/ui/header'
 import Footer from '@/components/ui/footer'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -64,6 +65,7 @@ export default function RootLayout({
           </div>
         </Theme>
       </body>
+      <GoogleAnalytics gaId="G-GTC52J0KXV" />
     </html>
   )
 }
