@@ -23,12 +23,11 @@ export default function Subscribe() {
           <div className="space-y-10">
             <section>
               {/* Page title */}
-              <h1 className="h1 font-aspekta mb-5">Never miss an update ✨</h1>
+              <h1 className="h1 font-aspekta mb-5">Never miss an update</h1>
               {/* Page content */}
               <div className="text-slate-500 dark:text-slate-400 space-y-8">
                 <p className="text-lg">
-                  This newsletter is written by Mark Ivings, who previously worked at Google, Medium, Vimeo, and Qonto. Here is what to expect
-                  by subscribing:
+                  This newsletter is written by me. Here is what to expect by subscribing:
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-start">
@@ -89,85 +88,7 @@ export default function Subscribe() {
                     {/* Success message */}
                     {/* <p className="text-xs text-slate-500 mt-3 italic">Thanks for subscribing!</p> */}
                   </form>
-                  <div className="flex items-center mt-5">
-                    <div className="inline-flex -space-x-3 -ml-0.5">
-                      <Image
-                        className="rounded-full border-2 border-white dark:border-slate-800 box-content"
-                        src={Avatar01}
-                        width={24}
-                        height={24}
-                        alt="Avatar 01"
-                      />
-                      <Image
-                        className="rounded-full border-2 border-white dark:border-slate-800 box-content"
-                        src={Avatar02}
-                        width={24}
-                        height={24}
-                        alt="Avatar 02"
-                      />
-                      <Image
-                        className="rounded-full border-2 border-white dark:border-slate-800 box-content"
-                        src={Avatar03}
-                        width={24}
-                        height={24}
-                        alt="Avatar 03"
-                      />
-                      <Image
-                        className="rounded-full border-2 border-white dark:border-slate-800 box-content"
-                        src={Avatar04}
-                        width={24}
-                        height={24}
-                        alt="Avatar 04"
-                      />
-                      <Image
-                        className="rounded-full border-2 border-white dark:border-slate-800 box-content"
-                        src={Avatar05}
-                        width={24}
-                        height={24}
-                        alt="Avatar 05"
-                      />
-                    </div>
-                    <div className="text-sm text-slate-500 ml-3">Join 100K+ developers.</div>
-                  </div>
                 </div>
-              </div>
-            </section>
-
-            <section>
-              {/* Cards */}
-              <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
-                <a
-                  className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 odd:-rotate-1 even:rotate-1 hover:rotate-0 transition-transform duration-700 hover:duration-100 ease-in-out p-5"
-                  href="#0"
-                >
-                  <div className="flex flex-col h-full">
-                    <div className="grow">
-                      <Image className="rounded-full mb-2" src={Testimonial01} width={40} height={40} alt="Testimonial 01" />
-                      <div className="text-lg font-aspekta font-[650] mb-1">“ Incredible Value “</div>
-                      <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">
-                        I was able to quickly master the skills necessary to advance my career. I'm grateful for the resources Mark provided
-                        and would recommend him to anyone.
-                      </p>
-                    </div>
-                    <div className="text-xs font-aspekta font-[650] text-sky-500">— Mary Coyle</div>
-                  </div>
-                </a>
-                <a
-                  className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 odd:-rotate-1 even:rotate-1 hover:rotate-0 transition-transform duration-700 hover:duration-100 ease-in-out p-5"
-                  href="#0"
-                >
-                  <div className="flex flex-col h-full">
-                    <div className="grow">
-                      <Image className="rounded-full mb-2" src={Testimonial02} width={40} height={40} alt="Testimonial 02" />
-                      <div className="text-lg font-aspekta font-[650] mb-1">“ The Best Newsletter “</div>
-                      <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">
-                        I was able to quickly master the skills necessary to advance my career. I'm grateful for the resources Mark provided
-                        and would recommend him to anyone.
-                      </p>
-                    </div>
-                    <div className="text-xs font-aspekta font-[650] text-sky-500">— Daniel Burka</div>
-                  </div>
-                </a>
               </div>
             </section>
           </div>
