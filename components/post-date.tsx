@@ -1,8 +1,7 @@
-import { parseISO, format } from 'date-fns'
+import moment from 'moment'
 
 export default function PostDate({ dateString }: {
   dateString: string
 }) {
-  const date = parseISO(dateString)
-  return <time dateTime={dateString}>{format(date, 'MMM d, yyyy')}</time>
+  return <time dateTime={dateString}>{moment(dateString).format('MMM d, yyyy')}</time>
 }

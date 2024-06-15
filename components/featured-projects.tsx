@@ -32,7 +32,7 @@ export default function FaeturedProjects() {
         </a>
         <a
           className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 transition-transform duration-700 hover:duration-100 ease-in-out p-5"
-          href="https://github.com/igventurelli/formula-ino" target="_blank"
+          href="https://xml2json.igventurelli.io/" target="_blank"
         >
           <div className="flex flex-col h-full">
             <div className="grow">
@@ -45,8 +45,8 @@ export default function FaeturedProjects() {
                   />
                 </svg>
               </div>
-              <div className="text-lg font-aspekta font-[650] mb-1">Formula Ino</div>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">Arduino remote control car with PS4 DualShock Bluetooth.</p>
+              <div className="text-lg font-aspekta font-[650] mb-1">XML2JSON</div>
+              <p className="text-sm text-slate-500 dark:text-slate-400 mb-2">Convert XML responses into JSON with a simple HTTP request</p>
             </div>
             <div className="text-sky-500 flex justify-end">
               <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="14" height="12">
