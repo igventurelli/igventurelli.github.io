@@ -7,7 +7,7 @@ export default function FaeturedProjects() {
       <div className="grid sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5">
         <a
           className="rounded-lg border border-slate-200 dark:border-slate-800 dark:bg-gradient-to-t dark:from-slate-800 dark:to-slate-800/30 transition-transform duration-700 hover:duration-100 ease-in-out p-5"
-          href="https://github.com/igventurelli/pipe4j" target="_blank"
+          href="https://pipe4j.igventurelli.io" target="_blank"
         >
           <div className="flex flex-col h-full">
             <div className="grow">
